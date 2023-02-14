@@ -58,16 +58,17 @@ export default function index() {
                       thumbnailBorder="silver"
                       thumbnail={true}
                     >
-                      <Grid.Container gap={2} justify="center" className="lg:px-20">
+                      <Grid.Container justify="center" className="lg:px-20">
                         {projectImage.map((image) => {
                           return (
-                            <Grid xs={12} sm={6} key={image}>
+                            <Grid xs={12} sm={6} key={image} className='p-3'>
                               <Image
                                 src={image.src}
                                 alt={image.alt}
                                 data-lightboxjs="lightbox1"
                                 width={700}
                                 height={500}
+                                className="max-w-full"
                               />
                             </Grid>
                           );
