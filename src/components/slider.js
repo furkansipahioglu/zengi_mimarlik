@@ -7,33 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 
-
-
-export default function slider() {
-  const swiperRef = useRef(null);
-
-  const slides = [
-    {
-      id: 1,
-      title: "RIVA VILLA PROJESİ",
-      image: "/images/1.jpg",
-    },
-    {
-      id: 2,
-      title: "RIVA VILLA PROJESİ2",
-      image: "/images/2.jpg",
-    },
-    {
-      id: 3,
-      title: "RIVA VILLA PROJESİ3",
-      image: "/images/3.jpg",
-    },
-    {
-      id: 4,
-      title: "RIVA VILLA PROJESİ4",
-      image: "/images/4.jpg",
-    },
-  ];
+export default function slider({ slides }) {
+const swiperRef = useRef(null);
 
   return (
     <>
