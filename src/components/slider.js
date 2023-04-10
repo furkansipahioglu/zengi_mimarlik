@@ -5,9 +5,10 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import Image from "next/image";
 import Link from "next/link";
-import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
+import { BsFillCaretLeftFill, BsFillCaretRightFill,BsArrowLeftCircleFill,BsArrowRightCircleFill,BsArrowLeftCircle,BsArrowRightCircle } from "react-icons/bs";
 
-export default function slider({ slides }) {
+
+export default function slider({ slides, shown }) {
 const swiperRef = useRef(null);
 
   return (
@@ -15,7 +16,7 @@ const swiperRef = useRef(null);
       <Swiper
         ref={swiperRef}
         modules={[Navigation]}
-        className="mySwiper h-full"
+        className="h-full mySwiper"
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
@@ -27,22 +28,22 @@ const swiperRef = useRef(null);
         {slides.map((slide) => {
           return (
             <SwiperSlide key={slide.id}>
-              <div className="item-inner h-full">
-                <div className="item-image z-10 relative">
+              <div className="h-full item-inner">
+                <div className="relative z-10 item-image">
                   <Image
                     src={slide.image}
                     width={1920}
                     height={900}
-                    className="h-[600px] md:h-[800px] w-full brightness-75 object-cover"
+                    className="h-[600px] md:h-screen w-full brightness-75 object-cover"
                   />
                 </div>
-                <div className="item-content absolute bottom-10 md:bottom-40 px-5 md:px-0 w-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                  <h1 className="text-4xl font-bold text-white uppercase tracking-wide">
+                <div className="absolute z-20 px-5 transform -translate-x-1/2 -translate-y-1/2 item-content bottom-10 md:bottom-40 md:px-0 w-96 left-1/2">
+                  <h1 className="text-4xl font-bold tracking-wide text-white uppercase">
                     {slide.title}
                   </h1>
                   <Link
                     href="/"
-                    className="uppercase bg-slate-200 flex justify-center items-center h-10 rounded-full my-4 py-6 bg-opacity-75 font-medium tracking-wide"
+                    className="flex items-center justify-center h-10 py-6 my-4 font-medium tracking-wide uppercase bg-opacity-75 rounded-full bg-slate-200"
                   >
                     PROJEYI GÖRÜNTÜLE
                   </Link>
@@ -52,20 +53,20 @@ const swiperRef = useRef(null);
           );
         })}
       </Swiper>
-      <div>
+      {shown &&<div>
         <button
-          className="absolute bottom-10 md:bottom-1/2 z-40 left-10"
+          className="absolute z-40 bottom-10 md:bottom-1/2 left-10 "
           onClick={() => swiperRef.current?.slidePrev()}
         >
-          <BsFillCaretLeftFill className="text-7xl text-white opacity-40 accent-violet-200" />
+          <BsArrowLeftCircle className="text-white text-7xl opacity-40 accent-violet-200" />
         </button>
         <button
-          className="absolute bottom-10 md:bottom-1/2 z-40 right-10"
+          className="absolute z-40 bottom-10 md:bottom-1/2 right-10"
           onClick={() => swiperRef.current?.slideNext()}
         >
-          <BsFillCaretRightFill className="text-7xl text-white opacity-40 accent-violet-200" />
+          <BsArrowRightCircle className="text-white text-7xl opacity-40 accent-violet-200" />
         </button>
-      </div>
+      </div>}
     </>
   );
 }

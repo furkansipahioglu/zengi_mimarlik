@@ -19,7 +19,7 @@ export default function index() {
     }
 
     useEffect(() => {
-        if(router.pathname === '/contact' || router.pathname === '/about' || router.pathname === '/project' || router.pathname === '/project/[id]' || router.pathname === '/project/[id]/[slug]') {
+        if(router.pathname === '/contact' || router.pathname === '/about' || router.pathname === '/project/[id]' || router.pathname === '/project/[id]/[slug]') {
             setImages("/images/logo.png");
             setNavBg("bg-white");
             setToggleIcons("text-black");
@@ -54,10 +54,10 @@ export default function index() {
 
   return (
     <>
-        <header className="fixed top-0 z-50 left-0 right-0">
+        <header className="fixed top-0 left-0 right-0 z-50">
             <nav className={`navbar transition-all py-3 ${navBg}`}>
-                <div className="container mx-auto px-4">
-                    <div className="flex justify-between items-center">
+                <div className="container px-4 mx-auto">
+                    <div className="flex items-center justify-between">
                         <Link href="/">
                             <Image src={images} className="logos" width={100} height={50} />
                         </Link>
@@ -69,12 +69,15 @@ export default function index() {
                     </div>
                 </nav>
                 <div className={`fixed top-0 h-screen w-72 bg-white bg-opacity-90 backdrop-blur-lg ease-in duration-300 rounded-tl-3xl p-5 z-50 right-0 ${isOpen ? 'right-0' : 'right-[-500px]' }`}>
-                    <div className="my-4 px-4">
-                        <ul className="flex flex-col items-center justify-center pt-5">
-                            <li className="pb-4"><Link className="text-black hover:text-gray-700 text-xl uppercase tracking-widest" href="/">anasayfa</Link></li>
-                            <li className="pb-4"><Link className="text-black hover:text-gray-700 text-xl uppercase tracking-widest" href="/project">projeler</Link></li>
-                            <li className="pb-4"><Link className="text-black hover:text-gray-700 text-xl uppercase tracking-widest" href="/about">firma</Link></li>
-                            <li className="pb-4"><Link className="text-black hover:text-gray-700 text-xl uppercase tracking-widest" href="/contact">iletişim</Link></li>
+                    <div className="px-4 my-4">
+                        <ul className="flex flex-col items-center justify-center pt-5" style={{fontFamily: 'Raleway',fontWeight:"500"}}>
+                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/">anasayfa</Link></li>
+                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/project">projeler</Link></li>
+                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/about">firma</Link></li>
+                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/contact">iletişim</Link></li>
+                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/contact">TR</Link></li>
+                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/contact">EN</Link></li>
+                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/contact">DE</Link></li>
                         </ul>
 
                     </div>

@@ -35,16 +35,16 @@ export default function index() {
 
   return (
     <section className='project'>
-        <div className='container mx-auto text-center py-10'>
+        <div className='container py-10 mx-auto text-center'>
             <div className='project-description'>
                 <div className="px-10">
                   <p>İstanbul Riva'da, Düşler Vadisi içerisinde bulunan konut projesi ihtiyaçları, yapının hacimsel ve çevresel özellikleri baz alıarak tasarlanmıştır.</p>
                   <p>Özellikle zemin katta iç içe geçmiş mekanların birbiri ile olan ilişkisinde kullanıcıya akıcı ve örtlük bir yön verilmeye çalışılmıştır.</p>
                   <p>Kullanıcıyı yormayan renk ve malzemeler tercih edilmesinin yanı sıra estetik algıyı yükseltecek modern çizgide dekoratif elemanlar tercih edilmiş, hacimsel detaylarla zenginleştirilmeye çalışılmıştır.</p>
                 </div>
-                <div className="project-wrapper pt-20">
+                <div className="pt-20 project-wrapper">
                   <div className="project-item">
-                    <h2 className="text-3xl text-center pb-10">S.E Villa Projesi</h2>
+                    <h2 className="pb-10 text-3xl text-center">S.E Villa Projesi</h2>
                     <SlideshowLightbox
                       theme="day"
                       lightboxIdentifier="lightbox1"
@@ -57,18 +57,19 @@ export default function index() {
                       iconColor="silver"
                       thumbnailBorder="silver"
                       thumbnail={true}
+                      
                     >
-                      <Grid.Container justify="center" className="lg:px-20">
+                      <Grid.Container justify="center" className="overflow-hidden lg:px-20">
                         {projectImage.map((image) => {
                           return (
-                            <Grid xs={12} sm={6} key={image} className='p-3'>
+                            <Grid xs={12} sm={6} key={image} className='p-3 overflow-hidden '>
                               <Image
                                 src={image.src}
                                 alt={image.alt}
                                 data-lightboxjs="lightbox1"
                                 width={700}
                                 height={500}
-                                className="max-w-full"
+                                className="max-w-full overflow-hidden duration-300 ease-in hover:scale-105"
                               />
                             </Grid>
                           );

@@ -53,10 +53,15 @@ export default function gallery() {
   ];
 
   return (
-    <section className="project-page px-5 lg:px-0 py-10">
-      <div className="container mx-auto text-center py-10">
+    <section className="px-5 py-10 project-page lg:px-0">
+      <div className="container py-10 mx-auto text-center">
+      <div className="px-10 pb-20">
+                  <p>İstanbul Riva'da, Düşler Vadisi içerisinde bulunan konut projesi ihtiyaçları, yapının hacimsel ve çevresel özellikleri baz alıarak tasarlanmıştır.</p>
+                  <p>Özellikle zemin katta iç içe geçmiş mekanların birbiri ile olan ilişkisinde kullanıcıya akıcı ve örtlük bir yön verilmeye çalışılmıştır.</p>
+                  <p>Kullanıcıyı yormayan renk ve malzemeler tercih edilmesinin yanı sıra estetik algıyı yükseltecek modern çizgide dekoratif elemanlar tercih edilmiş, hacimsel detaylarla zenginleştirilmeye çalışılmıştır.</p>
+                </div>
         <div className="project-item">
-          <h2 className="text-2xl text-center pb-10 text-red-700 uppercase font-medium tracking-wider">projeler</h2>
+          <h2 className="pb-10 text-2xl font-medium tracking-wider text-center text-red-700 uppercase">projeler</h2>
           <SlideshowLightbox
             theme="day"
             lightboxIdentifier="lightbox1"
@@ -74,22 +79,28 @@ export default function gallery() {
               {projectImage.map((item) => {
                 return (
                   <Grid xs={12} sm={6} lg={4} key={item}>
-                    <div className="flex flex-col items-center justify-between">
+                    <div className="relative flex flex-col items-center justify-between overflow-hidden duration-300 ease-in-out group">
+                    
                     <Image
                       src={item.src}
                       alt={item.alt}
                       data-lightboxjs="lightbox1"
                       width={700}
                       height={400}
+                      className="duration-700 ease-in-out group-hover:scale-110 group-hover:brightness-75"
+                      
                     />
-
-                  <div className="w-full p-1">
-                    <div className="flex w-full justify-between items-center border-b-2 border-gray-200">
-                        <p className="text-sm text-gray-500">{item.location}</p>
-                        <p className="text-sm text-gray-500">{item.year}</p>
+                   {/* <div   className="absolute hidden w-full h-full overlay group-hover:block" style={{backgroundColor:" rgba(0,0,0,.4)"}}></div> */}
+                  <div className="absolute bottom-0 w-full duration-300 ease-in-out group-hover:bottom-5">
+                  <div className="hidden p-1 group-hover:block">
+                    <div className="flex items-center justify-between w-full border-b-2 border-gray-200">
+                        <p className="text-sm text-white">{item.location}</p>
+                        <p className="text-sm text-white">{item.year}</p>
                       </div>
-                      <p className="text-sm text-gray-500 text-start">{item.project_name}</p>
+                      <p className="text-sm text-white text-start">{item.project_name}</p>
                     </div>
+                  </div>
+                  
                   </div>
 
                   </Grid>
