@@ -32,6 +32,7 @@ export async function getPostDetails(projectID) {
         id: 1,
         title: "RIVA VILLA PROJESİ",
         image: "/images/detail.jpg",
+        imagemobile: "/images/ankara-villa/mob.jpg",
         },
     ],[
         {
@@ -90,6 +91,7 @@ export async function getPostDetails(projectID) {
         id: 2,
         title: "RIVA VILLA PROJESİ",
         image: "/images/ann-villa/detail.jpg",
+        imagemobile: "/images/ann-villa/mob2.jpg",
         },
     ],[
         {
@@ -148,6 +150,7 @@ export async function getPostDetails(projectID) {
         id: 1,
         title: "RIVA VILLA PROJESİ",
         image: "/images/proje-5/detail.jpg",
+        imagemobile: "/images/proje-5/mob3.jpg",
         },
     ],[
         {
@@ -333,6 +336,7 @@ export async function getPostDetails(projectID) {
         id: 1,
         title: "RIVA VILLA PROJESİ",
         image: "/images/proje-7/detail.jpg",
+        imagemobile: "/images/proje-7/mob4.jpg",
         },
     ],[
         {

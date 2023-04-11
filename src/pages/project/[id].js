@@ -72,7 +72,14 @@ export default function Post({ postData }) {
                     src={postData[0][0].image}
                     width={1920}
                     height={600}
-                    className="h-[600px] md:h-[450px] w-full brightness-75 "
+                    className="h-[600px] md:h-[450px] w-full brightness-75 object-cover hidden sm:block"
+                  />
+                  
+                  <Image
+                    src={postData[0][0].imagemobile}
+                    width={1920}
+                    height={600}
+                    className="h-[600px] md:h-[450px] w-full brightness-75 object-cover sm:hidden  "
                   />
                 </div>
                 {/* <div className="absolute z-20 px-5 transform -translate-x-1/2 -translate-y-1/2 item-content bottom-10 md:bottom-40 md:px-0 w-96 left-1/2">
@@ -117,7 +124,7 @@ export default function Post({ postData }) {
               {postData[1].map((item) => {
                 return (
                   <Grid xs={12} sm={6} lg={4} key={item}>
-                    <div className="relative flex flex-col items-center justify-between overflow-hidden duration-300 ease-in-out group" style={{maxHeight:"250px"}}>
+                    <div className="relative flex flex-col items-center justify-between w-full overflow-hidden duration-300 ease-in-out group" style={{maxHeight:"250px"}}>
                     
                     <Image
                       src={item.src}

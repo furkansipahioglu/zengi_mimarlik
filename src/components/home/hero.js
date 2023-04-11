@@ -40,7 +40,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative home-slider h-[600px] md: h-screen" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+    <section className="relative home-slider h-[600px] md:h-screen" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         <Slider slides={slides} shown={isShown} className="h-5/6"  />
     </section>
   );
