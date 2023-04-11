@@ -4,7 +4,6 @@ import { AiOutlineAlignRight } from "@react-icons/all-files/ai/AiOutlineAlignRig
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/router'
-import {ThreeDots} from 'react-loader-spinner';
 
 
 
@@ -16,16 +15,6 @@ export default function index() {
     const [toggleIcons, setToggleIcons] = useState("text-white");
     const router = useRouter();
 
-    const [loading,setLoading]=useState(false)
-
-    useEffect(()=>{
-      setLoading(true)
-      setTimeout(()=>{
-        setLoading(false)
-      },700)
-  
-    },[])
-  
 
 
     const toggleMenu = () => {
@@ -69,25 +58,12 @@ export default function index() {
 
   return (
     <>
-        {loading?
-    <div className='flex items-center justify-center h-screen'>
-
-<ThreeDots 
-height="80" 
-width="80" 
-radius="9"
-color="#4fa94d" 
-ariaLabel="three-dots-loading"
-wrapperStyle={{}}
-wrapperClassName=""
-visible={true}
- /></div>:
         <header className="fixed top-0 left-0 right-0 z-50">
             <nav className={`navbar transition-all py-3 ${navBg}`}>
                 <div className="container px-4 mx-auto">
                     <div className="flex items-center justify-between">
                         <Link href="/">
-                            <Image src={images} className="logos" width={100} height={50} />
+                            <Image src={images} className="logos" width={100} height={50} alt='Logos' />
                         </Link>
                         <button className="navbar-toggler" type="button" onClick={toggleMenu}>
                             <AiOutlineAlignRight className={`text-4xl ${toggleIcons} toggle-icons`}/>
@@ -117,7 +93,6 @@ visible={true}
                     </button>
                 </div>
         </header>
-        }
     </>
   );
 }

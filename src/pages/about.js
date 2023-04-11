@@ -30,7 +30,7 @@ export default function about() {
                             </p>
                     </div>
                     <div className="col-span-12 about-item-description lg:col-span-4">
-                        <Image src="/images/22.jpg" width={400} height={400} alt="About Image" className="hidden ml-auto lg:block"></Image>
+                        <Image src="/images/22.jpg" width={400} height={400} alt="About Image" className="hidden ml-auto lg:block"/>
                     </div>
                 </div>
                 <div className="w-full py-4 about-item-description">

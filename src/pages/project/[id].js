@@ -26,29 +26,6 @@ export async function getStaticPaths() {
     };
   }
 
-  // const slides = [
-  //   {
-  //     id: 1,
-  //     title: "RIVA VILLA PROJESİ",
-  //     image: "/images/detail.jpg",
-  //   },
-    // {
-    //   id: 2,
-    //   title: "RIVA VILLA PROJESİ2",
-    //   image: "/images/2.jpg",
-    // },
-    // {
-    //   id: 3,
-    //   title: "RIVA VILLA PROJESİ3",
-    //   image: "/images/3.jpg",
-    // },
-    // {
-    //   id: 4,
-    //   title: "RIVA VILLA PROJESİ4",
-    //   image: "/images/4.jpg",
-    // },
-  // ];
-
 export default function Post({ postData }) {
 
   const swiperRef = useRef(null);
@@ -62,13 +39,10 @@ export default function Post({ postData }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet"/>
       </Head>
-      
-     
-       
-        
               <div className=" item-inner">
                 <div className="relative z-10 item-image">
                   <Image
+                  alt='Post Data'
                     src={postData[0][0].image}
                     width={1920}
                     height={600}
@@ -76,23 +50,13 @@ export default function Post({ postData }) {
                   />
                   
                   <Image
+                    alt='Post Data'
                     src={postData[0][0].imagemobile}
                     width={1920}
                     height={600}
                     className="h-[600px] md:h-[450px] w-full brightness-75 object-cover sm:hidden  "
                   />
                 </div>
-                {/* <div className="absolute z-20 px-5 transform -translate-x-1/2 -translate-y-1/2 item-content bottom-10 md:bottom-40 md:px-0 w-96 left-1/2">
-                  <h1 className="text-4xl font-bold tracking-wide text-white uppercase">
-                    {slide.title}
-                  </h1>
-                  <Link
-                    href="/"
-                    className="flex items-center justify-center h-10 py-6 my-4 font-medium tracking-wide uppercase bg-opacity-75 rounded-full bg-slate-200"
-                  >
-                    PROJEYI GÖRÜNTÜLE
-                  </Link>
-                </div> */}
               </div>
           
           
@@ -122,9 +86,9 @@ export default function Post({ postData }) {
             thumbnail={true}
           >
             <Grid.Container gap={2} justify="center" className="lg:px-20">
-              {postData[1].map((item) => {
+              {postData[1].map((item, index) => {
                 return (
-                  <Grid xs={12} sm={6} lg={4} key={item}>
+                  <Grid xs={12} sm={6} lg={4} key={index}>
                     <div className="relative flex flex-col items-center justify-between w-full overflow-hidden duration-300 ease-in-out group" style={{maxHeight:"250px"}}>
                     
                     <Image

@@ -53,10 +53,8 @@ export default function galleryHome() {
       id:6,
       src: "/images/comingsoon.jpg",
       alt: "Zengi Mimarlık Gallery Image 6",
-      location: 'İstanbul',
       year: '2020',
       location: 'İstanbul',
-      year: '2020',
       project_name: 'E.A Villa Projesi',
     },
   ];
@@ -81,9 +79,9 @@ export default function galleryHome() {
             thumbnail={true}
           >
             <Grid.Container gap={2} justify="center" className="lg:px-20">
-              {projectImage.map((item) => {
+              {projectImage.map((item, index) => {
                 return (
-                  <Grid xs={12} sm={6} lg={4} key={item}>
+                  <Grid xs={12} sm={6} lg={4} key={index}>
                     <div className="flex flex-col items-center justify-center ">
                       <div className="overflow-hidden duration-300 ease-in-out">
                        <Link href={`/project/${item.id}`}>

@@ -62,7 +62,7 @@ export default function index() {
                       <Grid.Container justify="center" className="overflow-hidden lg:px-20">
                         {projectImage.map((image) => {
                           return (
-                            <Grid xs={12} sm={6} key={image} className='p-3 overflow-hidden '>
+                            <Grid xs={12} sm={6} key={index} className='p-3 overflow-hidden '>
                               <Image
                                 src={image.src}
                                 alt={image.alt}

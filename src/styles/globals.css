@@ -4,15 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+@font-face {
+  font-family: "GillSans";
+  src: local("GillSansMedium"),
+  url("/src/fonts/GillSansMedium.otf") format("truetype");
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- 
 }
 
 body {
-  font-family: "GillSans";
+  font-family: "GillSans", sans-serif;
 }
 
 
@@ -22,10 +28,4 @@ body {
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
-@font-face {
-  font-family: "GillSans";
-  src: local("GillSansMedium"),
-   url("/src/fonts/GillSansMedium.otf") format("truetype");
-  font-weight: bold;
-  }
 

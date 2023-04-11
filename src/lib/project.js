@@ -78,10 +78,8 @@ export async function getPostDetails(projectID) {
       {
         src: "/images/ankara-villa/ankaravilla006.jpg",
         alt: "Zengi Mimarlık Gallery Image 6",
-        location: 'Ankara',
         year: '2021',
         location: 'Ankara',
-        year: '2021',
         project_name: 'K.A. Villa Projesi',
         project_location: "Mutfak",
       },

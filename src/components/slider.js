@@ -25,12 +25,13 @@ const swiperRef = useRef(null);
           swiperRef.current = swiper;
         }}
       >
-        {slides.map((slide) => {
+        {slides.map((slide, index) => {
           return (
-            <SwiperSlide key={slide.id}>
+            <SwiperSlide key={index}>
               <div className="lg:h-full item-inner">
                 <div className="relative z-10 item-image">
                   <Image
+                    alt={slide.title}
                     src={slide.image}
                     width={1920}
                     height={900}

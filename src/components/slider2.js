@@ -11,8 +11,10 @@ import { BsFillCaretLeftFill, BsFillCaretRightFill,BsArrowLeftCircleFill,BsArrow
 export default function slider2({ slides, shown }) {
 const swiperRef = useRef(null);
 
+
   return (
     <>
+
       <Swiper
         ref={swiperRef}
         modules={[Navigation]}
@@ -25,29 +27,19 @@ const swiperRef = useRef(null);
           swiperRef.current = swiper;
         }}
       >
-        {slides.map((slide) => {
+        {slides.map((slide, index) => {
           return (
-            <SwiperSlide key={slide.id}>
+            <SwiperSlide key={index}>
               <div className=" item-inner">
                 <div className="relative z-10 item-image">
                   <Image
+                    alt={slide.title}
                     src={slide.image}
                     width={1920}
                     height={600}
                     className="h-[600px] md:h-[450px] w-full brightness-75 object-cover "
                   />
                 </div>
-                {/* <div className="absolute z-20 px-5 transform -translate-x-1/2 -translate-y-1/2 item-content bottom-10 md:bottom-40 md:px-0 w-96 left-1/2">
-                  <h1 className="text-4xl font-bold tracking-wide text-white uppercase">
-                    {slide.title}
-                  </h1>
-                  <Link
-                    href="/"
-                    className="flex items-center justify-center h-10 py-6 my-4 font-medium tracking-wide uppercase bg-opacity-75 rounded-full bg-slate-200"
-                  >
-                    PROJEYI GÖRÜNTÜLE
-                  </Link>
-                </div> */}
               </div>
             </SwiperSlide>
           );
