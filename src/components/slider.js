@@ -37,13 +37,13 @@ const swiperRef = useRef(null);
                     className="h-[600px] md:h-screen w-full brightness-75 object-cover"
                   />
                 </div>
-                <div className="absolute z-20 px-5 transform -translate-x-1/2 -translate-y-1/2 item-content bottom-10 md:bottom-40 md:px-0 w-96 left-1/2">
-                  <h1 className="text-4xl font-bold tracking-wide text-white uppercase">
+                <div className="absolute z-20 flex flex-col items-center justify-center px-5 transform -translate-x-1/2 -translate-y-1/2 item-content bottom-10 md:bottom-40 md:px-0 left-1/2 w-100">
+                  <h1 className="text-5xl font-bold tracking-wide text-white uppercase">
                     {slide.title}
                   </h1>
                   <Link
-                    href="/"
-                    className="flex items-center justify-center h-10 py-6 my-4 font-medium tracking-wide uppercase bg-opacity-75 rounded-full bg-slate-200"
+                    href={`/project/${slide.id}`}
+                    className="flex items-center justify-center w-1/2 h-10 py-6 my-4 font-medium tracking-wide uppercase duration-500 ease-in-out bg-opacity-75 rounded-full bg-slate-200 hover:text-slate-200 hover:bg-black"
                   >
                     PROJEYI GÖRÜNTÜLE
                   </Link>

@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "GillSans";
 }
 
 
@@ -21,3 +21,13 @@ body {
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
+@font-face {
+  font-family: "GillSans";
+  src: local("GillSansMedium"),
+   url("/src/fonts/GillSansMedium.otf") format("truetype");
+  font-weight: bold;
+  }
+
+  .font-face-gm {
+    font-family: "GillSans",sans-serif;
+   }

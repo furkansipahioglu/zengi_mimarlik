@@ -34,7 +34,7 @@ const swiperRef = useRef(null);
                     src={slide.image}
                     width={1920}
                     height={600}
-                    className="h-[600px] md:h-[450px] w-full brightness-75 "
+                    className="h-[600px] md:h-[450px] w-full brightness-75 object-cover "
                   />
                 </div>
                 {/* <div className="absolute z-20 px-5 transform -translate-x-1/2 -translate-y-1/2 item-content bottom-10 md:bottom-40 md:px-0 w-96 left-1/2">

@@ -4,6 +4,8 @@ import Hero from '../components/home/hero'
 import Project from '../components/home/project'
 import GalleryHome from '../components/home/galleryHome'
 
+
+
 export default function Home() {
   return (
     <Layout>

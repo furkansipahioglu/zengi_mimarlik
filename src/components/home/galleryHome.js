@@ -7,43 +7,51 @@ import Link from "next/link";
 export default function galleryHome() {
   
   const projectImage = [
+    
     {
-      src: "/images/1.jpg",
-      alt: "Zengi Mimarlık Gallery Image 1",
-      location: 'İstanbul',
-      year: '2020',
-      project_name: 'S.E Villa Projesi',
-    },
-    {
-      src: "/images/2.jpg",
+      id:2,
+      src: "/images/ann-villa/annvilla001.jpg",
       alt: "Zengi Mimarlık Gallery Image 2",
-      location: 'İstanbul3',
-      year: '2020',
-      project_name: 'E.A Villa Projesi',
+      location: 'İstanbul / Riva',
+      year: '2022',
+      project_name: 'Düşler Vadisi A.N.N Villa',
     },
     {
-      src: "/images/3.jpg",
+      id:1,
+      src: "/images/ankara-villa/ankaravilla001.jpg",
+      alt: "Zengi Mimarlık Gallery Image 1",
+      location: 'Ankara',
+      year: '2021',
+      project_name: 'K.A Villa Projesi',
+      
+    },
+    {
+      id:3,
+      src: "/images/proje-5/STK(2).JPG",
       alt: "Zengi Mimarlık Gallery Image 3",
-      location: 'İstanbul2',
-      year: '2020',
-      project_name: 'E.A Villa Projesi',
+      location: 'İstanbul/Eyüp',
+      year: '2021',
+      project_name: 'S.T.K Yönetim Ofisi',
     },
     {
-      src: "/images/4.jpg",
+      id:4,
+      src: "/images/proje-7/studyo001.jpg",
       alt: "Zengi Mimarlık Gallery Image 4",
-      location: 'İstanbuls',
-      year: '2020',
-      project_name: 'E.A Villa Projesi',
+      location: 'İstanbul/Eyüp',
+      year: '2021',
+      project_name: 'S.T.K Yönetim Ofisi',
     },
     {
-      src: "/images/5.jpg",
+      id:5,
+      src: "/images/comingsoon.jpg",
       alt: "Zengi Mimarlık Gallery Image 5",
       location: 'İstanbul',
-      year: '2020',
+      year: '2021',
       project_name: 'E.A Villa Projesi',
     },
     {
-      src: "/images/6.jpg",
+      id:6,
+      src: "/images/comingsoon.jpg",
       alt: "Zengi Mimarlık Gallery Image 6",
       location: 'İstanbul',
       year: '2020',
@@ -78,7 +86,7 @@ export default function galleryHome() {
                   <Grid xs={12} sm={6} lg={4} key={item}>
                     <div className="flex flex-col items-center justify-center ">
                       <div className="overflow-hidden duration-300 ease-in-out">
-                       <Link href={`/project${item.id}`}>
+                       <Link href={`/project/${item.id}`}>
                       <Image
                       src={item.src}
                       alt={item.alt}
@@ -97,7 +105,10 @@ export default function galleryHome() {
                         <p className="text-sm text-gray-500">{item.location}</p>
                         <p className="text-sm text-gray-500">{item.year}</p>
                       </div>
+                      <div className="flex items-center justify-between w-full">
                       <p className="text-sm text-gray-500 text-start">{item.project_name}</p>
+                      <p className="text-sm text-gray-500 text-start">{item.project_location}</p>
+                      </div>
                     </div>
                   </div>
 

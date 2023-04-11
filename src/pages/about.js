@@ -18,7 +18,7 @@ export default function about() {
         </Head>
 
         <section className="py-20 about-page sm:py-32 ">
-        <div className="container px-5 py-10 mx-auto sm:px-10 bg-cover bg-no-repeat h-5/6 bg-[url('/images/bg_lg_op.png')]">
+        <div className="container px-5 py-10 mx-auto sm:px-10 bg-center bg-no-repeat h-5/6 bg-[url('/images/bg_lg_op.png')]">
                 <div className="grid items-center grid-cols-12 lg:gap-12">
                     <div className="col-span-12 about-item-description lg:col-span-8 ">
                         <h2 className="w-2/3 pb-2 mb-3 text-xl font-semibold tracking-wider uppercase border-b-2 border-b-gray-200">zengi mimarlık</h2>

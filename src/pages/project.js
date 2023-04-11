@@ -2,6 +2,7 @@ import Layout from "@/components/layout"
 import Head from "next/head"
 import Slider2 from "@/components/slider2"
 import Project from "@/components/project/gallery"
+import GalleryHome from "@/components/home/galleryHome"
 
 
 export default function project() {
@@ -40,7 +41,7 @@ export default function project() {
           <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet"/>
         </Head>
         <Slider2 slides={slides}  />
-        <Project/>  
+        <GalleryHome/>  
 
 
     </Layout>

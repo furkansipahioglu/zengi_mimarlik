@@ -17,9 +17,10 @@ export default function index() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
-
+    // || router.pathname === '/project/[id]/[slug]'
+    // || router.pathname === '/project/[id]' 
     useEffect(() => {
-        if(router.pathname === '/contact' || router.pathname === '/about' || router.pathname === '/project/[id]' || router.pathname === '/project/[id]/[slug]') {
+        if(router.pathname === '/contact' || router.pathname === '/about' ) {
             setImages("/images/logo.png");
             setNavBg("bg-white");
             setToggleIcons("text-black");
@@ -75,9 +76,12 @@ export default function index() {
                             <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/project">projeler</Link></li>
                             <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/about">firma</Link></li>
                             <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/contact">iletişim</Link></li>
-                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/contact">TR</Link></li>
-                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/contact">EN</Link></li>
-                            <li className="pb-4"><Link className="text-xl tracking-widest text-black uppercase hover:text-gray-700" href="/contact">DE</Link></li>
+                            <div className="flex items-center justify-center gap-4">
+                            <li className="pr-2 border-r-2 border-black"><Link className="text-sm tracking-widest text-black uppercase hover:text-gray-700" href="/contact">TR</Link></li>
+                            <li className="pr-2 border-r-2 border-black"><Link className="text-sm tracking-widest text-black uppercase hover:text-gray-700" href="/contact">EN</Link></li>
+                            <li className=""><Link className="text-sm tracking-widest text-black uppercase hover:text-gray-700" href="/contact">IT</Link></li>
+                            </div>
+                            
                         </ul>
 
                     </div>
