@@ -30,7 +30,7 @@ export async function getPostDetails(projectID) {
       '1': [[
         {
         id: 1,
-        title: "RIVA VILLA PROJESİ",
+        title: "K.A. Villa Projesi",
         image: "/images/detail.jpg",
         imagemobile: "/images/ankara-villa/mob.jpg",
         },
@@ -89,7 +89,7 @@ export async function getPostDetails(projectID) {
     '2': [[
         {
         id: 2,
-        title: "RIVA VILLA PROJESİ",
+        title: "Düşler Vadisi A.N.N Villa",
         image: "/images/ann-villa/detail.jpg",
         imagemobile: "/images/ann-villa/mob2.jpg",
         },
@@ -148,7 +148,7 @@ export async function getPostDetails(projectID) {
     '3': [[
         {
         id: 1,
-        title: "RIVA VILLA PROJESİ",
+        title: "S.T.K. Yönetim Ofisi",
         image: "/images/proje-5/detail.jpg",
         imagemobile: "/images/proje-5/mob3.jpg",
         },
@@ -334,7 +334,7 @@ export async function getPostDetails(projectID) {
     '4': [[
         {
         id: 1,
-        title: "RIVA VILLA PROJESİ",
+        title: "S.T.K. Yönetim Ofisi Stüdyo",
         image: "/images/proje-7/detail.jpg",
         imagemobile: "/images/proje-7/mob4.jpg",
         },

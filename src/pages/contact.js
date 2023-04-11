@@ -26,6 +26,7 @@ export default function Contact() {
               allowFullScreen=""
               aria-hidden="false"
               tabIndex="0"
+              className='mb-10 lg:h-full h-96'
             />
             </Grid>
             <Grid xs={12} md={8} className='flex flex-col items-start py-10 bg-gray-100 lg:px-20'>

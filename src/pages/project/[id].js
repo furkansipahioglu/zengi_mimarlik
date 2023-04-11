@@ -100,13 +100,14 @@ export default function Post({ postData }) {
     
               <section className="px-5 py-10 project-page lg:px-0">
       <div className="container py-10 mx-auto text-center">
+      <h1 className="pb-10 text-4xl font-medium tracking-wider text-center text-red-700 ">{postData[0][0].title}</h1>
       <div className="px-10 pb-20">
                   <p>İstanbul Riva'da, Düşler Vadisi içerisinde bulunan konut projesi ihtiyaçları, yapının hacimsel ve çevresel özellikleri baz alıarak tasarlanmıştır.</p>
                   <p>Özellikle zemin katta iç içe geçmiş mekanların birbiri ile olan ilişkisinde kullanıcıya akıcı ve örtlük bir yön verilmeye çalışılmıştır.</p>
                   <p>Kullanıcıyı yormayan renk ve malzemeler tercih edilmesinin yanı sıra estetik algıyı yükseltecek modern çizgide dekoratif elemanlar tercih edilmiş, hacimsel detaylarla zenginleştirilmeye çalışılmıştır.</p>
                 </div>
         <div className="project-item">
-          <h2 className="pb-10 text-2xl font-medium tracking-wider text-center text-red-700 uppercase">projeler</h2>
+        <h2 className="pb-10 text-3xl font-medium tracking-wider text-center text-red-700 ">Resimler</h2>
           <SlideshowLightbox
             theme="day"
             lightboxIdentifier="lightbox1"
