@@ -152,7 +152,7 @@ export async function getPostDetails(projectID) {
         },
     ],[
         {
-        src: "/images/proje-5/STK(1).jpg",
+        src: "/images/proje-5/stk1.jpg",
         alt: "Zengi Mimarlık Gallery Image 1",
         location: 'İstanbul/Eyüp',
         year: '2021',
@@ -160,7 +160,7 @@ export async function getPostDetails(projectID) {
         project_location: "Giriş-Karşılama",
       },
       {
-        src: "/images/proje-5/STK(2).jpg",
+        src: "/images/proje-5/stk2.jpg",
         alt: "Zengi Mimarlık Gallery Image 2",
         location: 'İstanbul/Eyüp',
         year: '2021',
@@ -168,7 +168,7 @@ export async function getPostDetails(projectID) {
         project_location: "Giriş-Karşılama",
       },
       {
-        src: "/images/proje-5/STK(3).jpg",
+        src: "/images/proje-5/stk3.jpg",
         alt: "Zengi Mimarlık Gallery Image 3",
         location: 'İstanbul/Eyüp',
         year: '2021',
@@ -176,7 +176,7 @@ export async function getPostDetails(projectID) {
         project_location: "Giriş-Karşılama",
       },
       {
-        src: "/images/proje-5/STK(4).jpg",
+        src: "/images/proje-5/stk4.jpg",
         alt: "Zengi Mimarlık Gallery Image 4",
         location: 'İstanbul/Eyüp',
         year: '2021',
@@ -184,7 +184,7 @@ export async function getPostDetails(projectID) {
         project_location: "Giriş-Karşılama",
       },
       {
-        src: "/images/proje-5/STK(5).jpg",
+        src: "/images/proje-5/stk5.jpg",
         alt: "Zengi Mimarlık Gallery Image 5",
         location: 'İstanbul/Eyüp',
         year: '2021',
@@ -192,7 +192,7 @@ export async function getPostDetails(projectID) {
         project_location: "Giriş-Karşılama",
       },
       {
-        src: "/images/proje-5/STK(6).jpg",
+        src: "/images/proje-5/stk6.jpg",
         alt: "Zengi Mimarlık Gallery Image 6",
         location: 'İstanbul/Eyüp',
         year: '2021',
@@ -200,7 +200,7 @@ export async function getPostDetails(projectID) {
         project_location: "Giriş-Karşılama",
       },
       {
-        src: "/images/proje-5/STK(7).jpg",
+        src: "/images/proje-5/stk7.jpg",
         alt: "Zengi Mimarlık Gallery Image 6",
         location: 'İstanbul/Eyüp',
         year: '2021',
@@ -208,7 +208,7 @@ export async function getPostDetails(projectID) {
         project_location: "Giriş-Karşılama",
       },
       {
-        src: "/images/proje-5/STK(8).jpg",
+        src: "/images/proje-5/stk8.jpg",
         alt: "Zengi Mimarlık Gallery Image 6",
         location: 'İstanbul/Eyüp',
         year: '2021',
@@ -216,7 +216,7 @@ export async function getPostDetails(projectID) {
         project_location: "Giriş-Holü",
       },
     //   {
-    //     src: "/images/proje-5/STK(9).jpg",
+    //     src: "/images/proje-5/stk9.jpg",
     //     alt: "Zengi Mimarlık Gallery Image 6",
     //     location: 'İstanbul/Eyüp',
     //     year: '2021',
@@ -224,7 +224,7 @@ export async function getPostDetails(projectID) {
     //     project_location: "Giriş-Karşılama",
     //   },
       {
-        src: "/images/proje-5/STK(10).jpg",
+        src: "/images/proje-5/stk10.jpg",
         alt: "Zengi Mimarlık Gallery Image 6",
         location: 'İstanbul/Eyüp',
         year: '2021',

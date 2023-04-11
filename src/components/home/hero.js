@@ -30,7 +30,7 @@ export default function Hero() {
     {
       id: 3,
       title: "S.T.K YÖNETİM OFİSİ",
-      image: "/images/proje-5/STK(1).jpg",
+      image: "/images/proje-5/stk1.jpg",
     },
     {
       id: 4,
