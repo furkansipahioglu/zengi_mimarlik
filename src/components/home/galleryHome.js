@@ -93,7 +93,7 @@ export default function galleryHome() {
                       
                       width={700}
                       height={400}
-                      className="duration-300 ease hover:scale-105"
+                      className="duration-500 ease hover:scale-125"
                       
                     />
                     </Link>
