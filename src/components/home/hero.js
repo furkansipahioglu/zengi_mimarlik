@@ -37,6 +37,11 @@ export default function Hero() {
       title: "S.T.K YÖNETİM OFİSİ",
       image: "/images/proje-7/studyo001.jpg",
     },
+    {
+      id: 5,
+      title: "DÜŞLER VADİSİ E.A. VİLLA",
+      image: "/images/ea-villa/eavilla001.jpg",
+    },
   ];
 
   return (

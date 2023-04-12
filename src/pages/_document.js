@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
           {CssBaseline.flush()}
-          <script
+          {/* <script
               dangerouslySetInnerHTML={{
                   __html: `
                 if (document.location.pathname.startsWith('/_next/')) {
@@ -13,7 +13,7 @@ export default function Document() {
                 }
               `,
               }}
-          ></script>
+          ></script> */}
       </Head>
       <body className='relative'>
         <Main />

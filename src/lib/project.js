@@ -15,8 +15,13 @@ export async function getPostIdList() {
         }
       },
       {
+        params: {
+           id: '4'
+         }
+       },
+      {
       params: {
-        id: '4'
+        id: '5'
       }
       
 
@@ -386,6 +391,207 @@ export async function getPostDetails(projectID) {
         project_location: "Stüdyo",
       },
     ]],
+    '5': [[
+      {
+      id: 1,
+      title: "DÜŞLER VADİSİ E.A. VİLLA",
+      image: "/images/ea-villa/eavilla001.jpg",
+      imagemobile: "/images/ea-villa/eavilla011.jpg",
+      },
+  ],[
+      {
+      src: "/images/ea-villa/eavilla001.jpg",
+      alt: "Zengi Mimarlık Gallery Image 1",
+      location: 'İstanbul / Riva',
+      year: '2022',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Salon",
+    },
+    {
+      src: "/images/ea-villa/eavilla002.jpg",
+      alt: "Zengi Mimarlık Gallery Image 2",
+      location: 'İstanbul / Riva',
+      year: '2022',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Salon",
+    },
+    {
+      src: "/images/ea-villa/eavilla003.jpg",
+      alt: "Zengi Mimarlık Gallery Image 3",
+      location: 'İstanbul / Riva',
+      year: '2022',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Salon",
+    },
+    {
+      src: "/images/ea-villa/eavilla004.jpg",
+      alt: "Zengi Mimarlık Gallery Image 4",
+      location: 'İstanbul / Riva',
+      year: '2022',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Salon",
+    },
+    {
+      src: "/images/ea-villa/eavilla005.jpg",
+      alt: "Zengi Mimarlık Gallery Image 5",
+      location: 'İstanbul / Riva',
+      year: '2022',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Salon",
+    },
+    {
+      src: "/images/ea-villa/eavilla006.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Giriş Holü",
+    },
+    {
+      src: "/images/ea-villa/eavilla007.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Giriş Holü",
+    },
+    {
+      src: "/images/ea-villa/eavilla008.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Mutfak",
+    },
+    {
+      src: "/images/ea-villa/eavilla009.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Mutfak",
+    },
+    {
+      src: "/images/ea-villa/eavilla010.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Mutfak",
+    },
+    {
+      src: "/images/ea-villa/eavilla011.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Misafir WC",
+    },
+    {
+      src: "/images/ea-villa/eavilla012.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Ebeveyn Suiti",
+    },
+    {
+      src: "/images/ea-villa/eavilla013.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Ebeveyn Suiti",
+    },
+    {
+      src: "/images/ea-villa/eavilla014.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Ebeveyn Suiti",
+    },
+    {
+      src: "/images/ea-villa/eavilla015.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Ebeveyn Suiti",
+    },
+    {
+      src: "/images/ea-villa/eavilla016.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Ebeveyn Banyo",
+    },
+    {
+      src: "/images/ea-villa/eavilla017.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Genç Oda 1",
+    },
+    {
+      src: "/images/ea-villa/eavilla018.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Genç Oda 1",
+    },
+    {
+      src: "/images/ea-villa/eavilla019.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Genç Oda 1",
+    },
+    {
+      src: "/images/ea-villa/eavilla020.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Genç Oda 1",
+    },
+    {
+      src: "/images/ea-villa/eavilla021.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Genç Oda 2",
+    },
+    {
+      src: "/images/ea-villa/eavilla022.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Genç Oda 2",
+    },
+    {
+      src: "/images/ea-villa/eavilla023.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Genç Oda 2",
+    },
+    {
+      src: "/images/ea-villa/eavilla024.jpg",
+      alt: "Zengi Mimarlık Gallery Image 6",
+      year: '2022',
+      location: 'İstanbul / Riva',
+      project_name: 'DÜŞLER VADİSİ E.A. VİLLA',
+      project_location: "Genel Banyo",
+    },
+  ]],
     
     }
     return dataSet[projectID]
